@@ -163,17 +163,16 @@
   }
 }
 
-
 /* Table of content
 
-1.General
-2.Navbar
-3.Banner
-4.About
-5.Services
-6.Portfolio
-7.Contact 
-8.Footer */
+1. General
+2. Navbar
+3. Banner
+4. About
+5. Services
+6. Portfolio
+7. Contact 
+8. Footer */
 
 /* 1. General */
 
@@ -194,7 +193,7 @@
   --gray-color: #c6c9d8bf;
   --gradient-color: linear-gradient(
     -224deg,
-    var(-primary-color) 0,
+    var(--primary-color) 0,
     #337dff 100%
   );
   --gradient-text: linear-gradient(
@@ -259,7 +258,6 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
-  /* width: 105px; */
   font-size: 13px;
 }
 
@@ -334,7 +332,7 @@ button {
   box-shadow: none !important;
 }
 
-/* 2 navbar */
+/* 2. navbar */
 .header_wrapper .navbar {
   padding: 15px 0;
   -webkit-transition: all 0.2s linear;
@@ -352,19 +350,22 @@ button {
   color: var(--gray-color);
   line-height: 2;
 }
-.header_wrapper .navbar-toggler :focus {
+
+.header_wrapper .navbar-toggler:focus {
   box-shadow: none;
 }
+
 .header_wrapper .nav-item {
   margin: 0 10px;
 }
+
 .header_wrapper .nav-item .nav-link {
   position: relative;
-  /* font-size: 16px; */
   font-weight: 500;
   color: var(--text-gray);
   display: inline-block;
 }
+
 .header_wrapper .nav-item .nav-link::after {
   position: absolute;
   content: "";
@@ -432,7 +433,7 @@ button {
   z-index: 2;
 }
 
-/* 4.About  */
+/* 4. About */
 .about_wrapper {
   cursor: default;
 }
@@ -502,7 +503,7 @@ button {
   color: var(--gray-color);
 }
 
-/* services */
+/* 5. Services */
 
 .services_wrapper .card {
   background-color: var(--bg-dark-blue);
@@ -516,7 +517,7 @@ button {
   transform: translateY(-5px);
 }
 
-/* 5.portfolio */
+/* 6. Portfolio */
 
 .portfolio_wrapper .card {
   height: 100%;
@@ -538,7 +539,7 @@ button {
   background-position: bottom center;
 }
 
-/* 6.contact */
+/* 7. Contact */
 
 .contact_wrapper .form-control,
 .contact-wrapper textarea {
@@ -566,7 +567,7 @@ button {
   color: var(--text-gray);
 }
 
-/* 8.footer */
+/* 8. Footer */
 
 .footer_wrapper {
   background-color: var(--bg-dark-blue);
@@ -611,35 +612,35 @@ button {
   color: var(--primary-color);
 }
 
-/* Media Queries */
-
-/* Mobile styles */
-@media only screen and (max-width: 600px) {
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
   h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 48px;
+    line-height: 58px;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   h3 {
     font-size: 18px;
+    margin-bottom: 15px;
   }
 
   h6 {
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 14px;
+    letter-spacing: 3px;
   }
 
   p {
     font-size: 12px;
-    line-height: 20px;
+    line-height: 26px;
   }
 
   .main-btn {
-    padding: 8px 15px;
+    padding: 5px 10px;
     font-size: 12px;
   }
 
@@ -652,12 +653,12 @@ button {
   }
 
   .about_wrapper ul li .nav-link {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .contact_wrapper .form-control,
   .contact-wrapper textarea {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .footer_wrapper .social-icon a {
@@ -668,112 +669,206 @@ button {
   }
 }
 
-/* Tablet styles */
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   h1 {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 48px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 12px;
   }
 
   h6 {
-    font-size: 14px;
-    letter-spacing: 3px;
+    font-size: 12px;
+    letter-spacing: 2px;
   }
 
   p {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 24px;
   }
 
   .main-btn {
-    padding: 10px 20px;
-    font-size: 13px;
+    padding: 4px 8px;
+    font-size: 11px;
   }
 
   .header_wrapper .navbar {
-    padding: 12px 0;
+    padding: 10px 0;
   }
 
   .banner_wrapper {
-    padding: 180px 0 90px 0;
+    padding: 100px 0 60px 0;
   }
 
   .about_wrapper ul li .nav-link {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .contact_wrapper .form-control,
   .contact-wrapper textarea {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .footer_wrapper .social-icon a {
-    width: 33px;
-    height: 33px;
-    line-height: 30px;
-    font-size: 13px;
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    font-size: 10px;
   }
 }
 
-/* Desktop styles */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 768px) {
   h1 {
-    font-size: 54px;
-    line-height: 68px;
+    font-size: 28px;
+    line-height: 38px;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
   h6 {
-    font-size: 15px;
-    letter-spacing: 4px;
+    font-size: 10px;
+    letter-spacing: 1px;
   }
 
   p {
-    font-size: 13px;
-    line-height: 28px;
+    font-size: 10px;
+    line-height: 22px;
   }
 
   .main-btn {
-    padding: 5px 10px;
-    font-size: 13px;
+    padding: 3px 6px;
+    font-size: 10px;
   }
 
   .header_wrapper .navbar {
-    padding: 15px 0;
+    padding: 8px 0;
   }
 
   .banner_wrapper {
-    padding: 200px 0 100px 0;
+    padding: 80px 0 50px 0;
   }
 
   .about_wrapper ul li .nav-link {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .contact_wrapper .form-control,
   .contact-wrapper textarea {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .footer_wrapper .social-icon a {
-    width: 35px;
-    height: 35px;
-    line-height: 32px;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    font-size: 8px;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .header_wrapper .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_wrapper .nav-item {
+    margin: 5px 0;
+  }
+
+  .header_wrapper .nav-item .nav-link {
     font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  h6 {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    font-size: 8px;
+    line-height: 20px;
+  }
+
+  .main-btn {
+    padding: 2px 4px;
+    font-size: 8px;
+  }
+
+  .header_wrapper .navbar {
+    padding: 5px 0;
+  }
+
+  .banner_wrapper {
+    padding: 60px 0 40px 0;
+  }
+
+  .about_wrapper ul li .nav-link {
+    font-size: 10px;
+  }
+
+  .contact_wrapper .form-control,
+  .contact-wrapper textarea {
+    font-size: 10px;
+  }
+
+  .footer_wrapper .social-icon a {
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 6px;
+  }
+
+  .header_wrapper .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_wrapper .nav-item {
+    margin: 4px 0;
+  }
+
+  .header_wrapper .nav-item .nav-link {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }
