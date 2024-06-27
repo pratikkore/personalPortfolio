@@ -176,8 +176,6 @@
 
 /* 1. General */
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:wght@100,200,300,400,700,900&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -541,31 +539,42 @@ button {
 
 /* 7. Contact */
 
-.contact_wrapper .form-control,
-.contact-wrapper textarea {
-  background-color: transparent;
-  border-color: var(--gray-color);
-  color: var(--text-gray);
-  font-size: 15px;
-  font-weight: 400;
-  padding: 10px 20px;
-}
-.contact_wrapper .form-control:hover,
-.contact-wrapper textarea:hover,
-.contact_wrapper .form-control:focus,
-.contact-wrapper textarea:focus {
-  border-color: var(--primary-color);
-  color: var(--text-white);
-}
-
-.contact_wrapper .call_details {
-  color: var(--text-gray);
-}
-
-.contact_wrapper .call_details {
-  font-weight: 700;
-  color: var(--text-gray);
-}
+  .contact_wrapper {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+    }
+    .contact_wrapper h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+    .contact_wrapper .call_details label {
+        font-weight: bold;
+        color: #555;
+    }
+    .contact_wrapper .form-control {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .contact_wrapper .btn {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        transition: background-color 0.3s;
+    }
+    .contact_wrapper .btn:hover {
+        background-color: #0056b3;
+    }
+    #bgvideo {
+        max-width: 100%;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
 
 /* 8. Footer */
 
@@ -611,6 +620,85 @@ button {
 .footer_wrapper .copyright-text a {
   color: var(--primary-color);
 }
+
+/* Portfolio Section Styles */
+.portfolio_wrapper {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.subtitle {
+    display: block;
+    font-size: 20px;
+    color: #6c757d;
+}
+
+h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+p {
+    color: #6c757d;
+}
+
+.card {
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 3px solid #007bff;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #495057;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .card-img {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}
+
 
 /* Responsive styles */
 @media only screen and (max-width: 1200px) {
@@ -667,7 +755,13 @@ button {
     line-height: 28px;
     font-size: 12px;
   }
+
+  .card-text{
+    color: #fd4766;
+  }
 }
+
+
 
 @media only screen and (max-width: 992px) {
   h1 {
